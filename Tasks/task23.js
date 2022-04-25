@@ -1,5 +1,5 @@
-var name = prompt("Name: ");
-var isNameVaild = /\D/.test(name);
+var userName = prompt("Name: ");
+var isNameVaild = /\D/.test(userName);
 
 var phoneNum = prompt("Phone number (8 digits): ");
 var isPhoneVaild = /^[0-9]{8}$/.test(phoneNum);
@@ -14,7 +14,7 @@ var colors = colorsCheck();
 
 document.writeln("<h1>Entering user info</h1> <hr>");
 
-checkVaildtion(isNameVaild, colors, "Welcome dear guest", name);
+checkVaildtion(isNameVaild, colors, "Welcome dear guest", userName);
 checkVaildtion(isPhoneVaild, colors, "your telephone number is ", phoneNum);
 checkVaildtion(isMobileVaild, colors, "your mobile number is", mobileNum);
 checkVaildtion(isEmailVaild, colors, "your email address is ", email);
